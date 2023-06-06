@@ -3,7 +3,6 @@
   position: relative;
 }
 .slider__container {
-  /* display: none; */
 }
 .slider__list {
   display: flex;
@@ -12,7 +11,7 @@
   margin: 0 -16px;
 }
 .slider__item {
-  padding: 0 1.6rem;
+  padding: 0 16px;
   flex-grow: 0;
   flex-shrink: 0;
   max-width: 26%;

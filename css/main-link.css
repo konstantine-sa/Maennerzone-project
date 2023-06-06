@@ -1,15 +1,16 @@
 .main-link {
   display: inline-block;
-  border-radius: 0.4rem;
-  padding: 1.3rem 3.6rem;
+  border-radius: 4px;
+  padding: 13px 36px;
   color: var(--color-background);
   background-color: var(--color-font);
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 }
 
 .main-link:hover:not(:disabled) {
@@ -26,7 +27,7 @@
 
 @media (max-width: 560px) {
   .main-link {
-    padding: 1rem 1rem;
-    font-size: 1rem;
+    padding: 10px 10px;
+    font-size: 10px;
   }
 }
