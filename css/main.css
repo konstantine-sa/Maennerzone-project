@@ -1,0 +1,47 @@
+@import "boilerplate.css";
+@import "variables.css";
+@import "header.css";
+@import "navigation.css";
+@import "main-link.css";
+@import "hero.css";
+@import "slider.css";
+@import "price.css";
+
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v28-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v28-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  margin: 0 4.8rem;
+  background-color: var(--color-background);
+  color: var(--color-font);
+  font-family: Raleway, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  min-width: 27.2rem;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: 131.2rem;
+  padding: 0 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+  body {
+    margin: 0 2.4rem;
+  }
+}
