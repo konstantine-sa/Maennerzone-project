@@ -8,6 +8,10 @@
   gap: 45px;
 }
 
+.footer__logo {
+  width: 80px;
+}
+
 .footer__navigation {
   justify-self: center;
 }
@@ -46,6 +50,10 @@
   .footer__container {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .footer__logo {
+    width: 60px;
   }
 
   .footer__navigation {
