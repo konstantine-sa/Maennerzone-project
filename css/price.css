@@ -58,6 +58,7 @@
 
 .price__item-amount {
   white-space: nowrap;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 /*================================ MEDIA QUERIES ===============================*/
