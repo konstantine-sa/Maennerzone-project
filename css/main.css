@@ -38,3 +38,9 @@ body {
     margin: 0 24px;
   }
 }
+
+@media (max-width: 320px) {
+  body {
+    margin: 0 12px;
+  }
+}
