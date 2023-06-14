@@ -23,6 +23,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.main__blured {
+  opacity: 0.2;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);

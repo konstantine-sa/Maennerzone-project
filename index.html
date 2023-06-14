@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/reserve.css">
     <link rel="stylesheet" href="css/radio.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
 
     <title>Männerzone</title>
 
@@ -49,7 +50,7 @@
         </div>
     </header>
 
-    <main>
+    <main">
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">
@@ -102,32 +103,32 @@
                     <div class="price__content">
                         <ul class="price__list">
                             <li class="price__item">
-                                <span class="price__item-title">Haarschnitt mit Schere</span>
-                                <span class="price__item-amount">25 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                             <li class="price__item">
-                                <span class="price__item-title">Haarschnitt mit Maschine</span>
-                                <span class="price__item-amount">18 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                             <li class="price__item">
-                                <span class="price__item-title">Haarschnitt + Bart schneiden</span>
-                                <span class="price__item-amount">30 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                             <li class="price__item">
-                                <span class="price__item-title">Haarschnitt + Bart-Modellierung</span>
-                                <span class="price__item-amount">35 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                             <li class="price__item">
-                                <span class="price__item-title">Rasur des Kopfes</span>
-                                <span class="price__item-amount">12 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                             <li class="price__item">
-                                <span class="price__item-title">Styling</span>
-                                <span class="price__item-amount">12 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                             <li class="price__item">
-                                <span class="price__item-title">Augenbrauen-Styling</span>
-                                <span class="price__item-amount">10 €</span>
+                                <span class="price__item-title"></span>
+                                <span class="price__item-amount"></span>
                             </li>
                         </ul>
                         <a href="#reserve" class="price__link main-link">Termin vereinbaren</a>
@@ -175,179 +176,67 @@
 
                 <form class="reserve__form">
                     <div class="reserve__form-container">
-                        <fieldset class="reserve__fieldset">
-                            <legend class="reserve__legend">Dienstleistung</legend>
+                        <fieldset class="reserve__fieldset reserve__fieldset-service" name="fieldservice">
+                            <legend class="reserve__legend"></legend>
 
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Haarschnitt mit Schere</span>
-                            </label>
 
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Haarschnitt mit Maschine</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Haarschnitt + Bart&nbsp;-&nbsp;Modellierung</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Haarschnitt + Bart&nbsp;schneiden</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Styling</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Augenbrauen-Styling</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="service">
-                                <span class="radio__label">Rasur des Kopfes</span>
                             </label>
                         </fieldset>
 
-                        <fieldset class="reserve__fieldset">
+                        <fieldset class="reserve__fieldset" name="fieldspec">
                             <legend class="reserve__legend">Fachmann</legend>
 
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label-spec"
-                                    style="--bg-img: url(../img/spec_1.png)">Alexander</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label-spec"
-                                    style="--bg-img: url(../img/spec_2.png)">Sebastian</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label-spec"
-                                    style="--bg-img: url(../img/spec_3.png)">Ahmed</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label-spec"
-                                    style="--bg-img: url(../img/spec_4.png)">Khalid</span>
-                            </label>
-
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label-spec"
-                                    style="--bg-img: url(../img/spec_5.png)">Lukas</span>
-                            </label>
+                            <label class="radio"></label>
                         </fieldset>
 
-                        <fieldset class="reserve__fieldset">
-                            <legend class="reserve__legend">Datum und Uhrzeit</legend>
+                        <fieldset class="reserve__fieldset" name="fielddata">
+                            <legend class=" reserve__legend">Datum und Uhrzeit</legend>
 
-                            <fieldset class="reserve__fieldset reserve__fieldset-sub">
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="month">
-                                    <span class="radio__label">Januar</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="month">
-                                    <span class="radio__label">Februar</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="month">
-                                    <span class="radio__label">März</span>
-                                </label>
+                            <fieldset class="reserve__fieldset reserve__fieldset-sub" name="fieldmonth">
+
                             </fieldset>
 
-                            <fieldset class="reserve__fieldset reserve__fieldset-sub">
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="day">
-                                    <span class="radio__label">18 Januar</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="day">
-                                    <span class="radio__label">19 Januar</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="day">
-                                    <span class="radio__label">20 Januar</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="day">
-                                    <span class="radio__label">21 Januar</span>
-                                </label>
+                            <fieldset class="reserve__fieldset reserve__fieldset-sub" name="fieldday">
+
                             </fieldset>
 
-                            <fieldset class="reserve__fieldset reserve__fieldset-sub">
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">10:00-11:30</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">11:30-13:00</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">13:00-14:30</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">14:30-16:00</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">16:00-17:30</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">17:30-19:00</span>
-                                </label>
-                                <label class="radio">
-                                    <input class="radio__input" type="radio" name="time">
-                                    <span class="radio__label">19:00-20:30</span>
-                                </label>
+                            <fieldset class="reserve__fieldset reserve__fieldset-sub" name="fieldtime">
+
                             </fieldset>
                         </fieldset>
                     </div>
 
-                    <button class="reserve-btn main-link">Termin vereinbaren</button>
+                    <button class="reserve-btn main-link" disabled id="btn">Termin vereinbaren</button>
                 </form>
             </div>
         </section>
-    </main>
+        </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__container">
-                <img class="footer__logo" src="img/logo.png" alt="logo barbershop Männerzone">
-                <nav class="footer__navigation navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <a href="#price" class="navigation__link">Die Kosten der Dienstleistungen</a>
-                        </li>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <img class="footer__logo" src="img/logo.png" alt="logo barbershop Männerzone">
+                    <nav class="footer__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#price" class="navigation__link">Die Kosten der Dienstleistungen</a>
+                            </li>
 
-                        <li class="navigation__item">
-                            <a href="#about" class="navigation__link">Über&nbsp;uns</a>
-                        </li>
-                    </ul>
-                </nav>
+                            <li class="navigation__item">
+                                <a href="#about" class="navigation__link">Über&nbsp;uns</a>
+                            </li>
+                        </ul>
+                    </nav>
 
 
-                <p>
-                    <small class="footer__copyright">© Konstantin
-                        Savchenko, 2023</small>
-                </p>
+                    <p>
+                        <small class="footer__copyright">© Konstantin
+                            Savchenko, 2023</small>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
