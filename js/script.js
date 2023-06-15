@@ -325,6 +325,7 @@ const initReserve = () => {
     }
   });
 
+  // ==========================================SENDING DATA TO SERVER==================================
   reserveForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -347,23 +348,28 @@ const initReserve = () => {
       btn,
     ]);
 
-    const success = document.createElement("div");
-    success.classList.add("success__popup_container");
-    success.innerHTML = `<div class="success__popup"> <h2>Danke für Ihre Bestellung!</h2>
-    <p>  Ihre Buchungsnummer: #${data.id} </p>
-    <p>Wir erwarten Sie am ${new Intl.DateTimeFormat("de-DE", {
+    // ==========================================RENDERING POPUP==================================
+    const popup = document.querySelector(".popup__container");
+    const popupForm = document.querySelector(".popup__form");
+    const popupBtn = document.querySelector(".popup-btn");
+
+    popup.classList.remove("hidden");
+    popup.classList.add("popup");
+    popupForm.innerHTML += ` <img src="../img/popup-done-240.svg"></img> <h2>Danke für Ihre Bestellung!</h2>
+    <p class="popup-num">  Ihre Buchungsnummer: #${data.id} </p>
+    <p>Wir erwarten Sie am <br> 
+    <span>${new Intl.DateTimeFormat("de-DE", {
       month: "long",
       day: "numeric",
     }).format(new Date(`${data.month}/${data.day}`))}, 
 
-    um ${data.time}
+    um ${data.time} </span>
     </p>
-    
-    <button class="success__popup_btn">OK</button>
-    </div>
     `;
 
-    reserveForm.append(success);
+    popupBtn.addEventListener("click", () => {
+      popup.classList.add("hidden");
+    });
   });
 };
 
