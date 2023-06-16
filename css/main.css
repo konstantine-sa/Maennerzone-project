@@ -12,7 +12,7 @@
 }
 
 body {
-  /* margin: 0 48px; */
+  box-sizing: border-box;
   background-color: var(--color-background);
   color: var(--color-font);
   font-family: Raleway, sans-serif;
@@ -23,8 +23,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-.main__blured {
-  opacity: 20;
+main,
+header,
+footer {
+  padding: 0 24px;
 }
 
 .visually-hidden {
@@ -34,18 +36,22 @@ body {
 
 .container {
   max-width: 1312px;
-  padding: 0 12px;
+  padding: 0 0;
   margin: 0 auto;
 }
 
 @media (max-width: 560px) {
-  body {
-    margin: 0 24px;
+  main,
+  header,
+  footer {
+    padding: 0 18px;
   }
 }
 
 @media (max-width: 320px) {
-  body {
-    margin: 0 12px;
+  main,
+  header,
+  footer {
+    padding: 0 12px;
   }
 }

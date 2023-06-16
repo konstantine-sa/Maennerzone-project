@@ -13,7 +13,7 @@
 }
 
 .footer__navigation {
-  justify-self: right;
+  justify-self: flex-end;
 }
 
 .footer__developer-link {
@@ -36,8 +36,8 @@
 /*================================ MEDIA QUERIES ===============================*/
 @media (max-width: 560px) {
   .footer__container {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: max-content 2fr;
+    gap: 22px;
   }
 
   .footer__logo {
@@ -45,7 +45,8 @@
   }
 
   .footer__navigation {
-    justify-self: flex-start;
+    justify-self: center;
+    font-size: 12px;
   }
 
   .footer__developer {
