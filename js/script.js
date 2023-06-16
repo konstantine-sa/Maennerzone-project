@@ -352,11 +352,13 @@ const initReserve = () => {
     const popup = document.querySelector(".popup__container");
     const popupForm = document.querySelector(".popup__form");
     const popupBtn = document.querySelector(".popup-btn");
+    const shader = document.querySelector(".shader");
 
+    shader.classList.remove("hidden");
     popup.classList.remove("hidden");
     popup.classList.add("popup");
     popupForm.innerHTML += ` <img src="../img/popup-done-240.svg"></img> <h2>Danke für Ihre Bestellung!</h2>
-    <p class="popup-num">  Ihre Buchungsnummer: #${data.id} </p>
+    <p class="popup-num">  Ihre Buchungsnummer: <span>#${data.id}</span></p>
     <p>Wir erwarten Sie am <br> 
     <span>${new Intl.DateTimeFormat("de-DE", {
       month: "long",
@@ -368,6 +370,7 @@ const initReserve = () => {
     `;
 
     popupBtn.addEventListener("click", () => {
+      shader.classList.add("hidden");
       popup.classList.add("hidden");
     });
   });
